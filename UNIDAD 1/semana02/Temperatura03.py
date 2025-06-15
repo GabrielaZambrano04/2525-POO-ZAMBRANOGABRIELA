@@ -1,3 +1,4 @@
+# Clase padre que representa un registro climático genérico
 class RegistroClimatico:
     def __init__(self, dia):
         self.dia = dia
@@ -5,16 +6,16 @@ class RegistroClimatico:
     def obtener_valor(self):
        return 0
 
-
+# Clase hija que representa un registro de temperatura
 class Temperatura(RegistroClimatico):
     def __init__(self, dia, temperatura):
-        super().__init__(dia) 
+        super().__init__(dia)        # Hereda el atributo dia
         self.temperatura = temperatura
 
     def obtener_valor(self):
         return self.temperatura
 
-
+# Clase que gestiona una semana de temperaturas
 class TemperaturaSemana:
     def __init__(self):
         self.dias = []
@@ -25,10 +26,10 @@ class TemperaturaSemana:
     def calcular_promedio(self):
         if len(self.dias) == 0:
             return 0
-        total = sum([dia.obtener_valor() for dia in self.dias]) 
+        total = sum([dia.obtener_valor() for dia in self.dias])       # Método polimórfico
         return total / len(self.dias)
 
-
+# Uso del programa fuera de las clases
 semana = TemperaturaSemana()
 semana.agregar_dia(Temperatura("lunes", 25.2))
 semana.agregar_dia(Temperatura("martes", 22.4))
