@@ -31,4 +31,3 @@ print("Áreas calculadas con valores predefinidos:\n")
 print(f"Radio del círculo: {radio_circulo} cm → Área: {area_circulo:.2f} cm²")
 print(f"Lado del cuadrado: {lado_cuadrado} cm → Área: {area_cuadrado:.2f} cm²")
 print(f"Base del triángulo: {base_triangulo} cm, Altura: {altura_triangulo} cm → Área: {area_triangulo:.2f} cm²")
-
