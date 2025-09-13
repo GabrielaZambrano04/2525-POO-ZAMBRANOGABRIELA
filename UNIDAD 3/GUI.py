@@ -10,7 +10,7 @@ from tkinter import messagebox
 
 # Crear la ventana principal
 ventana = tk.Tk()
-ventana.title("Aplicación GUI Básica")
+ventana.title("Aplicación GUI Gabriela")
 ventana.geometry("400x300")
 
 # Etiqueta descriptiva
